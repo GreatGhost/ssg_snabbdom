@@ -1,0 +1,39 @@
+{
+  "name": "studysnabbdom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.24.4",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "snabbdom": "^2.1.0"
+  },
+  "exports":{
+    "./init": "./build/package/init.js",
+    "./h": "./build/package/h.js",
+    "./helpers/attachto": "./build/package/helpers/attachto.js",
+    "./hooks": "./build/package/hooks.js",
+    "./htmldomapi": "./build/package/htmldomapi.js",
+    "./is": "./build/package/is.js",
+    "./jsx": "./build/package/jsx.js",
+    "./modules/attributes": "./build/package/modules/attributes.js",
+    "./modules/class": "./build/package/modules/class.js",
+    "./modules/dataset": "./build/package/modules/dataset.js",
+    "./modules/eventlisteners": "./build/package/modules/eventlisteners.js",
+    "./modules/hero": "./build/package/modules/hero.js",
+    "./modules/module": "./build/package/modules/module.js",
+    "./modules/props": "./build/package/modules/props.js",
+    "./modules/style": "./build/package/modules/style.js",
+    "./thunk": "./build/package/thunk.js",
+    "./tovnode": "./build/package/tovnode.js",
+    "./vnode": "./build/package/vnode.js"
+  }
+}
