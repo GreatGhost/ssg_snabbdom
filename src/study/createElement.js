@@ -8,6 +8,9 @@ export default function(vnode,pivot){
         // vnode内部是文字
         // 孤儿节点上树
         domNode.innerText=vnode.text;
-        pivot.parentNode.insertBefore(domNode,pivot)
+        // pivot.parentNode.insertBefore(domNode,pivot)
+        vnode.ele=domNode;
     }
+    return vnode.ele;
+    
 }
