@@ -1,6 +1,6 @@
 // 真正创建节点
 // 插入到元素之前
-export default function(vnode,pivot){
+export default function createElement(vnode){
     console.log('将',vnode,'插入到标杆',pivot,'前');
     // 创建一个dom节点，但是现在DOM节点还是孤儿节点
     let domNode=document.createElement(vnode.sel);
@@ -13,7 +13,11 @@ export default function(vnode,pivot){
         //存在内部子节点，就要递归
         for(let i=0;i<vnode.children.length;i++){
             let ch=vnode.children[i];
+
+            // 创建一个DOM
             let chDOM=createElement(ch);
+
+            // 上树
             domNode.appendChild(chDOM);
         }
     }
